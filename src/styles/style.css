@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+h2 {
+  color: rgb(36, 36, 36);
+}
+
+.form-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cep-form {
+    margin: 10px 0;
+}
+
+button {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(37, 37, 255);
+  color: #f1f1f1;
+}
+
+input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #e0e0e0;
+}
+
+span {
+  color: rgb(63, 63, 63);
+  height: 20px;
+}
