@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TH - Consulta CEP</title>
     <link rel="stylesheet" href="src/styles/style.css" />
   </head>
   <body>
     <div class="form-box">
       <h2>Busque um CEP</h2>
       <form id="cep-form">
-        <input autocomplete="off" id="cep-input" type="number" placeholder="Digite o cep">
+        <input autocomplete="off" id="cep-input" type="number" placeholder="Digite o cep" title="Erro!">
         <button id="cep-submit" type="submit">Buscar</button>
       </form>
-      <div id="result">
+      <div id="result__cep">
+        <div id="result">
+
+        </div>
       </div>
     </div>
 
     <div class="container__rua">
       <h2>Busque uma Rua</h2>
       <form id="ruaForm">
-        <input type="text" id="ruaInput" placeholder="Nome da Rua">
-        <input type="text" id="cidadeInput" placeholder="Cidade">
+        <input type="text" id="ruaInput" placeholder="Nome da Rua" required>
+        <input type="text" id="cidadeInput" placeholder="Cidade" required>
+        <input type="text" id="bairroInput" placeholder="Bairro">
         <select name="Estado" id="estadoInput">
-          <option value="Selecione" disabled selected>Estado</option>
           <option value="AC">Acre</option>
           <option value="AL">Alagoas</option>
           <option value="AP">Amapá</option>
@@ -55,8 +58,12 @@
         </select>
         <button id="ruaSubmit">Buscar</button>
       </form>
+      <div id="resultRuaContainer">
+        <div id="resultRua"></div>
+      </div>
     </div>
 
     <script src="src/script.js"></script>
+    <script src="./src/cepPeloNome.js"></script>
   </body>
 </html>

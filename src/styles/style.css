@@ -17,7 +17,7 @@ body {
 }
 
 h2 {
-  color: rgb(36, 36, 36);
+  color: rgb(11, 11, 87);
 }
 
 #cep-form {
@@ -29,19 +29,94 @@ button {
   font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgb(37, 37, 255);
-  color: #f1f1f1;
+  background-color: rgb(11, 11, 87);
+  color: rgb(241, 241, 241);
 }
 
-input {
+input, select {
   padding: 8px;
   font-size: 14px;
   border-radius: 5px;
   outline: none;
-  background-color: #e0e0e0;
+  background-color: rgb(224, 224, 224);
+  width: 115px;
+}
+
+#result__cep {
+  border: 5px solid rgb(11, 11, 87);
+  margin-top: 10px;
+  width: 40vw;
+  height: 60vh;
+  background-color: rgb(11, 11, 87);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px 0 40px 0;
+  padding: 20px;
+}
+
+#result {
+  width: 35vw;
+  height: 55vh;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10pt;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(11, 11, 87);
+  border-radius: 40px 0 40px 0;
+  line-height: 20px;
 }
 
 span {
   color: rgb(63, 63, 63);
   height: 20px;
+}
+
+#ruaForm {
+  margin: 10px 0;
+}
+
+#resultRuaContainer{
+  border: 5px solid rgb(11, 11, 87);
+  margin-top: 10px;
+  width: 40vw;
+  height: 60vh;
+  background-color: rgb(11, 11, 87);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 40px 0 40px 0;
+}
+
+#resultRua {
+  width: 35vw;
+  height: 55vh;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10pt;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(11, 11, 87);
+  border-radius: 40px 0 40px 0;
+  line-height: 20px;
+}
+
+.cardEndereco {
+  width: 35vw;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10pt;
+  color: rgb(11, 11, 87);
+  line-height: 20px;
+  border-radius: 40px 0 40px 0;
 }

@@ -25,11 +25,11 @@ async function handleSubmit(e) {
     e.preventDefault();
     const cep = cepForm[0].value.trim().replace(/ /g, "").replace(/-/g, "");
     const url = `https://viacep.com.br/ws/${cep}/json/`;
-    console.log(cep.length);
+
     if(cep.length !== 8) {
         result.innerHTML = `<p>Digite o CEP direito, seu cabra!</p>`
     } else {
-        await fetch(url)
+        fetch(url)
             .then(response => {
                 return response.json();
             })
