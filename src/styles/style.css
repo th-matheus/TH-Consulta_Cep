@@ -1,12 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
   background-color: #f3f3f3;
 }
 
@@ -14,15 +20,8 @@ h2 {
   color: rgb(36, 36, 36);
 }
 
-.form-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 #cep-form {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 button {
